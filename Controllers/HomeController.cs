@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using blog_c_.Models;
+using blog_c_.Models.ViewModels;
 
 namespace blog_c_.Controllers;
 
