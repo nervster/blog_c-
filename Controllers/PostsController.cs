@@ -167,4 +167,21 @@ public class PostsController : Controller
         return RedirectToAction(nameof(Index));
     }
 
+    [HttpPost]
+    public JsonResult Delete(int id)
+    {
+        using (SqliteConnection connection =
+                new SqliteConnection(_configuration.GetConnectionString("BlogDataContext")))
+        {
+            using (var command = connection.CreateCommand())
+            {
+                connection.Open();
+                command.CommandText = $"DELETE from post WHERE Id = '{id}'";
+                command.ExecuteNonQuery();
+            }
+        }
+
+        return Json(new Object{});
+    }
+
 }
