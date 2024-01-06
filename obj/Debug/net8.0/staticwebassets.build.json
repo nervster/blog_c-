@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iWrS5Q7TysQ5t/GiuDe+Ha85bLdik6a8tQb4vNSWqz0=",
+  "Hash": "mP0ZdPnIGOPf/lDc2cRX6ZbmTAB1DffeeB0eEESZ8NQ=",
   "Source": "blog_c-",
   "BasePath": "_content/blog_c-",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "/Users/niravsheth/Documents/repo/blog_c-/obj/Debug/net8.0/scopedcss/projectbundle/blog_c-.bundle.scp.css"
     },
     {
+      "Identity": "/Users/niravsheth/Documents/repo/blog_c-/wwwroot/assets/resume.pdf",
+      "SourceId": "blog_c-",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/niravsheth/Documents/repo/blog_c-/wwwroot/",
+      "BasePath": "_content/blog_c-",
+      "RelativePath": "assets/resume.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/resume.pdf"
+    },
+    {
       "Identity": "/Users/niravsheth/Documents/repo/blog_c-/wwwroot/css/site.css",
       "SourceId": "blog_c-",
       "SourceType": "Discovered",
@@ -91,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/niravsheth/Documents/repo/blog_c-/wwwroot/images/profile_image.jpg",
+      "SourceId": "blog_c-",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/niravsheth/Documents/repo/blog_c-/wwwroot/",
+      "BasePath": "_content/blog_c-",
+      "RelativePath": "images/profile_image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/profile_image.jpg"
     },
     {
       "Identity": "/Users/niravsheth/Documents/repo/blog_c-/wwwroot/js/site.js",

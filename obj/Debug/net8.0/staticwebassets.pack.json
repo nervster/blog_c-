@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets/blog_c-.bundle.scp.css"
     },
     {
+      "Id": "/Users/niravsheth/Documents/repo/blog_c-/wwwroot/assets/resume.pdf",
+      "PackagePath": "staticwebassets/assets/resume.pdf"
+    },
+    {
       "Id": "/Users/niravsheth/Documents/repo/blog_c-/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
       "Id": "/Users/niravsheth/Documents/repo/blog_c-/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/niravsheth/Documents/repo/blog_c-/wwwroot/images/profile_image.jpg",
+      "PackagePath": "staticwebassets/images/profile_image.jpg"
     },
     {
       "Id": "/Users/niravsheth/Documents/repo/blog_c-/wwwroot/js/site.js",
