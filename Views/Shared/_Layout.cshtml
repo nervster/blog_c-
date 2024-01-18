@@ -19,13 +19,16 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse">
-                    <ul class="navbar-nav flex-grow-1 justify-content-end">
+                    <ul class="navbar-nav flex-grow-1 justify-content-start">
                         <li class="nav-item @(ViewContext.RouteData.Values["Controller"].ToString() == "Home" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item @(ViewContext.RouteData.Values["Controller"].ToString() == "Posts" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Posts" asp-action="Index">Posts</a>
+                        <li class="nav-item @(ViewContext.RouteData.Values["Controller"].ToString() == "Project" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Project" asp-action="Index">Projects</a>
                         </li>
+                        @* <li class="nav-item @(ViewContext.RouteData.Values["Controller"].ToString() == "Posts" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Posts" asp-action="Index">Posts</a>
+                        </li> *@
                         <li class="nav-item @(ViewContext.RouteData.Values["Controller"].ToString() == "About" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
                             <a class="nav-link text-light" asp-area="" asp-controller="About" asp-action="Index">About Me</a>
                         </li>
