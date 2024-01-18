@@ -1,26 +1,54 @@
 @{
-    ViewData["Title"] = "My Posts";
+  ViewData["Title"] = "My Posts";
 }
-
+@using Microsoft.AspNetCore.Hosting
 @model PostViewModel
 
 <div xlass="text-center">
-    <h1 class="display-4">My Latest Post</h1>
+  <h1 class="display-4">My Latest Post</h1>
 </div>
+
 
 <div class="text-right">
   <a asp-area="" asp-controller="Posts" asp-action="NewPost">New Post</a>
 </div>
 
 <div class="row justify-content-center">
-  <div class="col-xl-6 col-lg-8 col-md-8 col-sm-10">
+  <div class="col-xl-12 col-lg-8 col-md-8 col-sm-10">
     <div class="posts-container">
       @foreach (var p in Model.PostList)
       {
-        <div class="post">
-          <h2><a asp-area="" asp-controller="Posts" asp-action="ViewPost" asp-route-itemid="@p.Id">@p.Title</a></h2>
-          <h5 class="text-muted">@p.UpdatedAt</h5>
-          <p>@p.Body</p>
+        @* <div class="post">
+      <h2><a asp-area="" asp-controller="Posts" asp-action="ViewPost" asp-route-itemid="@p.Id">@p.Title</a></h2>
+      <h5 class="text-muted">@p.UpdatedAt</h5>
+      <p>@p.Body</p>
+      </div> *@
+
+
+        <div class="row g-0 col-8 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <div class="card-body">
+              <a asp-area="" asp-controller="Posts" asp-action="ViewPost" asp-route-itemid="@p.Id">
+                <h3>@p.Title</h3>
+              </a>
+              <div class="mb-1 text-muted">@p.UpdatedAt</div>
+              <p class="card-text h-100 text-truncate" style="display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 3;">@p.Body</p>
+              @* <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+            <a asp-area="" asp-controller="Posts" asp-action="ViewPost" asp-route-itemid="@p.Id"><button type="button"
+            class="btn btn-sm btn-outline-secondary">View</button></a>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+            </div> *@
+            </div>
+
+          </div>
+          <div class="col-auto d-none d-lg-block justify-content-center">
+            <img class="card-img-top" alt="Thumbnail" style="height: 225px; width: 100%;" src='@p.Thumbnail'
+              data-holder-rendered="true">
+
+
+          </div>
         </div>
       }
     </div>

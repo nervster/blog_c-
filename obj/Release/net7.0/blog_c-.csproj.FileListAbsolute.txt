@@ -1,0 +1,9 @@
+/Users/niravsheth/Documents/repo/blog_c-/obj/Release/net7.0/blog_c-.csproj.AssemblyReference.cache
+/Users/niravsheth/Documents/repo/blog_c-/obj/Release/net7.0/blog_c-.GeneratedMSBuildEditorConfig.editorconfig
+/Users/niravsheth/Documents/repo/blog_c-/obj/Release/net7.0/blog_c-.AssemblyInfoInputs.cache
+/Users/niravsheth/Documents/repo/blog_c-/obj/Release/net7.0/blog_c-.AssemblyInfo.cs
+/Users/niravsheth/Documents/repo/blog_c-/obj/Release/net7.0/blog_c-.csproj.CoreCompileInputs.cache
+/Users/niravsheth/Documents/repo/blog_c-/obj/Release/net7.0/blog_c-.MvcApplicationPartsAssemblyInfo.cache
+/Users/niravsheth/Documents/repo/blog_c-/obj/Release/net7.0/blog_c-.RazorAssemblyInfo.cache
+/Users/niravsheth/Documents/repo/blog_c-/obj/Release/net7.0/blog_c-.RazorAssemblyInfo.cs
+/Users/niravsheth/Documents/repo/blog_c-/obj/Release/net7.0/blog_c-.sourcelink.json

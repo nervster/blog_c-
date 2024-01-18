@@ -1,15 +1,25 @@
 @model PostViewModel
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment env
 
 <div class="post">
-    <h2>@Model.Post.Title</h2>
-    <h5>Created At: @Model.Post.CreatedAt</h5>
-    <h5>Last Modified At: @Model.Post.UpdatedAt</h5>
+    <h2>@Model.Post.Title - @Model.Post.UpdatedAt.ToString("MMMM d, yyyy")</h2>
+    <img class="card-img-top" alt="Thumbnail" style='height: 350px;' src='@Model.Post.Thumbnail'
+              data-holder-rendered="true">
+
+    @if (env.IsDevelopment())
+{
+    <div class="post-actions">
+  <div>
+    <a class="btn btn-primary" asp-area="" asp-controller="Posts" asp-action="EditPost" asp-route-id="@Model.Post.Id">Update</a>
+    <input type="submit" class="btn btn-danger" value="Delete" onClick="deletePost(@Model.Post.Id)" />
+  </div>
+</div>
+}
+else
+{
+    <p>This content is visible in other environments.</p>
+}
     <p>@Model.Post.Body</p>
 </div>
 
-<div class="post-actions">
-  <ul>
-    <li><a class="btn btn-primary" asp-area="" asp-controller="Posts" asp-action="EditPost" asp-route-id="@Model.Post.Id">Update</a></li>
-    <li><input type="submit" class="btn btn-danger" value="Delete" onClick="deletePost(@Model.Post.Id)" /></li>
-  </ul>
-</div>
+

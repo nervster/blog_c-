@@ -69,7 +69,8 @@ public class PostsController : Controller
                                 Title = reader.GetString(1),
                                 Body = reader.GetString(2),
                                 CreatedAt = reader.GetDateTime(3),
-                                UpdatedAt = reader.GetDateTime(4)
+                                UpdatedAt = reader.GetDateTime(4),
+                                Thumbnail = reader.GetString(5)
                             }
                             );
                         }
@@ -107,6 +108,7 @@ public class PostsController : Controller
                         post.Body = reader.GetString(2);
                         post.CreatedAt = reader.GetDateTime(3);
                         post.UpdatedAt = reader.GetDateTime(4);
+                        post.Thumbnail = reader.GetString(5);
                     }
                     else
                     {
@@ -130,7 +132,7 @@ public class PostsController : Controller
             using (var command = connection.CreateCommand())
             {
                 connection.Open();
-                command.CommandText = $"INSERT INTO post (title, body, createdat, updatedat) values('{post.Title}', '{post.Body}','{post.CreatedAt}', '{post.UpdatedAt}')";
+                command.CommandText = $"INSERT INTO post (title, body, createdat, updatedat, thumbnail) values('{post.Title}', '{post.Body}','{post.CreatedAt}', '{post.UpdatedAt}', '{post.Thumbnail}')";
 
                 try {
                     command.ExecuteNonQuery();
@@ -152,7 +154,7 @@ public class PostsController : Controller
             using (var command = connection.CreateCommand())
             {
                 connection.Open();
-                command.CommandText = $"UPDATE post SET Title = '{post.Title}', Body = '{post.Body}', UpdatedAt = '{post.UpdatedAt}' WHERE Id = '{post.Id}'";
+                command.CommandText = $"UPDATE post SET Title = '{post.Title}', Body = '{post.Body}', UpdatedAt = '{post.UpdatedAt}', Thumbnail = '{post.Thumbnail}' WHERE Id = '{post.Id}'";
                 try
                 {
                     command.ExecuteNonQuery();

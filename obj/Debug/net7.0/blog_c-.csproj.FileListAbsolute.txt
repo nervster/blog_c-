@@ -55,3 +55,5 @@
 /Users/niravsheth/Documents/repo/blog_c-/obj/Debug/net7.0/blog_c-.pdb
 /Users/niravsheth/Documents/repo/blog_c-/obj/Debug/net7.0/blog_c-.genruntimeconfig.cache
 /Users/niravsheth/Documents/repo/blog_c-/obj/Debug/net7.0/ref/blog_c-.dll
+/Users/niravsheth/Documents/repo/blog_c-/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/niravsheth/Documents/repo/blog_c-/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
